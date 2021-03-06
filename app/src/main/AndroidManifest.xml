@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.whattocook">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WhatToCook">
+        <activity android:name=".MainActivity"  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignInActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".SignUpActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".HomeActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".ProfileActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".ChooseProductActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".ChooseApplianceActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".AddProductActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".CreateApplianceActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".CreateRecipeActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".RecipeResultsActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".RecipeActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".AdditionsActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".NoInternetActivity"  android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

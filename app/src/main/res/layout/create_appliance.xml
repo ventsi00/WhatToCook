@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextTextNameCreateAppliance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:autofillHints="@string/Name"
+        android:ems="10"
+        android:hint="@string/Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFinishCreateAppliance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCreateAppliance" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageViewCreateAppliance"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/ImageDescription"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextNameCreateAppliance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddPhotoCreateAppliance"
+        tools:srcCompat="@tools:sample/avatars"
+        app:shapeAppearanceOverlay="@style/rounded"
+        />
+
+    <Button
+        android:id="@+id/buttonAddPhotoCreateAppliance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AddPhoto"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewCreateAppliance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/buttonFinishCreateAppliance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextNameCreateAppliance" />
+</androidx.constraintlayout.widget.ConstraintLayout>

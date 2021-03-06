@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/buttonAddPhotoAddProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/AddPhoto"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextNameAddProduct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:background="@drawable/rounded_button"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageViewAddProduct"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/ImageDescription"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupAddProduct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextNameAddProduct"
+        tools:srcCompat="@tools:sample/avatars"
+        app:shapeAppearanceOverlay="@style/rounded"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroupAddProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFinishAddProduct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewAddProduct">
+
+        <RadioButton
+            android:id="@+id/radioButtonQuantityAddProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/Quantity" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMillilitersAddProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/Milliliters" />
+
+        <RadioButton
+            android:id="@+id/radioButtonGramsAddProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/Grams" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonFinishAddProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupAddProduct"
+        android:background="@drawable/rounded_button"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextNameAddProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/Name"
+        android:autofillHints="@string/Name"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewAddProduct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddPhotoAddProduct" />
+</androidx.constraintlayout.widget.ConstraintLayout>

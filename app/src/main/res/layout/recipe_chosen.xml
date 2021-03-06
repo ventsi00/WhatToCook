@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.whattocook.VerticalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageViewRecipeChosen"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="@string/ImageDescription"
+            app:layout_constraintBottom_toTopOf="@+id/textViewProductsRecipeChosen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNameRecipeChosen"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:srcCompat="@tools:sample/avatars"
+            app:shapeAppearanceOverlay="@style/rounded"
+            />
+
+        <ListView
+            android:id="@+id/ListViewProductsRecipeChosen"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/textViewAppliancesRecipeChosen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewProductsRecipeChosen" />
+
+        <TextView
+            android:id="@+id/textViewProductsRecipeChosen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/Products"
+            app:layout_constraintBottom_toTopOf="@+id/ListViewProductsRecipeChosen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewRecipeChosen" />
+
+        <TextView
+            android:id="@+id/textViewAppliancesRecipeChosen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/Appliances"
+            app:layout_constraintBottom_toTopOf="@+id/listAppliancesRecipeChosen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ListViewProductsRecipeChosen" />
+
+        <ListView
+            android:id="@+id/listAppliancesRecipeChosen"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/textViewDescriptionHeaderRecipeChoose"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAppliancesRecipeChosen" />
+
+        <TextView
+            android:id="@+id/textViewDescriptionRecipeChosen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDescriptionHeaderRecipeChoose" />
+
+        <TextView
+            android:id="@+id/textViewDescriptionHeaderRecipeChoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/Description"
+            app:layout_constraintBottom_toTopOf="@+id/textViewDescriptionRecipeChosen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listAppliancesRecipeChosen" />
+
+        <TextView
+            android:id="@+id/textViewNameRecipeChosen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageViewRecipeChosen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.example.whattocook.VerticalScrollView>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageViewCreateRecipe"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/ImageDescription"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextNameCreateRecipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonAddPhotoCreateRecipe"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars"
+        app:shapeAppearanceOverlay="@style/rounded"
+        />
+
+    <Button
+        android:id="@+id/buttonAddPhotoCreateRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/AddPhoto"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewCreateRecipe"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewCreateRecipe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewCreateRecipe" />
+
+    <Button
+        android:id="@+id/buttonFinishCreateRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/AddRecipe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDescriptionCreateRecipe" />
+
+    <EditText
+        android:id="@+id/editTextTextNameCreateRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/Name"
+        android:autofillHints="@string/Name"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewProductsCreateRecipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCreateRecipe" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewProductsCreateRecipe"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAddProductCreateRecipe"
+        app:layout_constraintEnd_toStartOf="@+id/recyclerViewAppliancesCreateRecipe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextNameCreateRecipe" />
+
+    <Button
+        android:id="@+id/buttonAddProductCreateRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/AddProduct"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDescriptionCreateRecipe"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAddApplianceCreateRecipe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewProductsCreateRecipe" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAppliancesCreateRecipe"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerViewProductsCreateRecipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/recyclerViewProductsCreateRecipe"
+        app:layout_constraintTop_toTopOf="@+id/recyclerViewProductsCreateRecipe" />
+
+    <Button
+        android:id="@+id/buttonAddApplianceCreateRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/AddAppliance"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonAddProductCreateRecipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonAddProductCreateRecipe"
+        app:layout_constraintTop_toTopOf="@+id/buttonAddProductCreateRecipe" />
+
+    <EditText
+        android:id="@+id/textViewDescriptionCreateRecipe"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFinishCreateRecipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="@string/RecipeDescription"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddProductCreateRecipe"
+        android:autofillHints="@string/RecipeDescription"
+        android:inputType="text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

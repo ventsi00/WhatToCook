@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "429695336322",
+    "project_id": "whattocook-82495",
+    "storage_bucket": "whattocook-82495.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:429695336322:android:02453111f8dd160ca8999b",
+        "android_client_info": {
+          "package_name": "com.example.whattocook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "429695336322-6hdvclt8ni7h6d26k13mvl8fjm7gvkhq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdmQcIkcSJ1BXCU1W_DoPutuSTJSrOJvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "429695336322-6hdvclt8ni7h6d26k13mvl8fjm7gvkhq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
